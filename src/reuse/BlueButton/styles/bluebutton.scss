@@ -1,0 +1,33 @@
+@import '../../../Variebles/Variebles.scss';
+
+.blue-button{
+    width: 178px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.25px;
+    color: $white;
+    background-color: $blue;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .arrow{
+        fill: $white;
+        transform: scale(2.3);
+        margin: 0 25px;
+        position: absolute;
+        right: 0;
+    }
+
+    &:hover .arrow{
+       right: -10px;
+       transition: .2s ease;
+    }
+
+    &:active{
+        background-color: $process;
+    }
+}

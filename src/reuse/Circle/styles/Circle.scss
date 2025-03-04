@@ -1,0 +1,38 @@
+@import '../../../Variebles/Variebles.scss';
+
+.circle{
+    div{
+        display: flex;
+        align-items: center;
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: $blue;
+            position: relative;
+            margin-right: 10px;
+        }
+    
+        span{
+            width: 183px;
+            height: 1px;
+            background: transparent;
+            border: 1px solid;
+            display: block;
+        }
+    }
+
+    h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.43px;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.29px;
+        max-width: 255px;
+    }
+}

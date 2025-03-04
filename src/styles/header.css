@@ -1,0 +1,41 @@
+.header {
+  padding-top: 20px;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 9;
+  background-color: #FFFFFF;
+  height: 100px;
+}
+.header .container {
+  display: flex;
+  max-width: 1200px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
+@media screen and (max-width: 924px) {
+  .header .container {
+    margin-bottom: 20px;
+  }
+}
+.header .container .logo-bar {
+  display: flex;
+  align-items: center;
+}
+.header .container .nav {
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+.header .container .nav ul {
+  display: flex;
+}
+.header .container .nav ul li {
+  margin-left: 20px;
+}
+.header .container .nav ul li a {
+  transition: 0.2s ease;
+}
+.header .container .nav ul li a:hover {
+  color: #2E4FD7;
+}/*# sourceMappingURL=header.css.map */

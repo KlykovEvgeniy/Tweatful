@@ -1,0 +1,30 @@
+@import "../../../Variebles/Variebles.scss";
+
+.headline-article{
+    display: flex;
+
+    img{
+        background-color: $circleColor;
+        border-radius: 50%;
+        padding: 10px;
+        width: 50px;
+        height: 50px;
+        margin-right: 30px;
+    }
+
+    div{
+        h3{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 30px;
+            letter-spacing: -0.36px;
+        }
+        p{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.29px;
+            max-width: 390px;
+        }
+    }
+}

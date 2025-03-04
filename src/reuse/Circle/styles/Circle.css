@@ -1,0 +1,31 @@
+.circle div {
+  display: flex;
+  align-items: center;
+}
+.circle div svg {
+  width: 20px;
+  height: 20px;
+  fill: #2E4FD7;
+  position: relative;
+  margin-right: 10px;
+}
+.circle div span {
+  width: 183px;
+  height: 1px;
+  background: transparent;
+  border: 1px solid;
+  display: block;
+}
+.circle h3 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.43px;
+}
+.circle p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.29px;
+  max-width: 255px;
+}/*# sourceMappingURL=Circle.css.map */

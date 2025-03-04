@@ -1,0 +1,32 @@
+.dropdown-button {
+  z-index: 9;
+  width: 40px !important;
+  height: 40px !important;
+  border: none;
+  background: transparent;
+  margin-bottom: 10px;
+}
+.dropdown-button svg {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.nav-dropdown {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #E7EBFC;
+  z-index: 8;
+}
+.nav-dropdown ul li {
+  margin: 30px;
+}
+.nav-dropdown ul li a {
+  font-size: 30px;
+}/*# sourceMappingURL=Dropdowm.css.map */

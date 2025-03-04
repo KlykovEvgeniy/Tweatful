@@ -1,0 +1,50 @@
+@import '../Variebles/Variebles.scss';
+
+.header {
+    padding-top: 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    background-color: $white;
+    height: 100px;
+
+    .container {
+        display: flex;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 100px;
+
+        @media screen and (max-width: 924px) {
+            margin-bottom: 20px;
+        }
+
+        .logo-bar {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav {
+            margin-bottom: 10px;
+            margin-left: 30px;
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-left: 20px;
+
+                    a {
+                        transition: .2s ease;
+
+                        &:hover {
+                            color: $blue;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
