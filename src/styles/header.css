@@ -1,11 +1,10 @@
 .header {
-  padding-top: 20px;
   position: fixed;
   right: 0;
   left: 0;
   z-index: 9;
   background-color: #FFFFFF;
-  height: 100px;
+  height: 79px;
 }
 .header .container {
   display: flex;
@@ -14,18 +13,16 @@
   align-items: center;
   margin-bottom: 100px;
 }
-@media screen and (max-width: 924px) {
-  .header .container {
-    margin-bottom: 20px;
-  }
-}
 .header .container .logo-bar {
   display: flex;
   align-items: center;
 }
+.header .container .logo-bar .logo {
+  margin-top: 5px;
+}
 .header .container .nav {
-  margin-bottom: 10px;
   margin-left: 30px;
+  margin-bottom: 5px;
 }
 .header .container .nav ul {
   display: flex;

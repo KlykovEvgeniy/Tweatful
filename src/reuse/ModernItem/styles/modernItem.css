@@ -1,0 +1,22 @@
+.modern-item h3, .modern-item p {
+  color: #FFFFFF;
+}
+.modern-item img {
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+}
+.modern-item h3 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  margin-bottom: 10px;
+}
+.modern-item p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.29px;
+  max-width: 255px;
+}/*# sourceMappingURL=modernItem.css.map */

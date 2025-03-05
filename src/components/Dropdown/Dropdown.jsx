@@ -7,6 +7,14 @@ import {GrClose} from "react-icons/gr";
 
 export default function Dropdown() {
     const [isOpen, setIsOpen] = useState(false);
+    const style = document.body.style
+
+    const handleHomeClick = () => {
+        style.backgroundColor = 'white';
+      };
+      const handleFeaturesClick = () => {
+        style.backgroundColor = '#052825';
+      };
 
     const hanldeToggler = () => {
         setIsOpen(prev => !prev);
@@ -25,10 +33,10 @@ export default function Dropdown() {
             <nav onClick={handleClick} className='nav-dropdown'>
                 <ul>
                     <li>
-                        <NavLink to="/">Home</NavLink>
+                        <NavLink onClick={handleHomeClick} to="/">Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/features">Features</NavLink>
+                        <NavLink onClick={handleFeaturesClick} to="/features">Features</NavLink>
                     </li>
                     <li>
                         <NavLink to="/pricing">Pricing</NavLink>

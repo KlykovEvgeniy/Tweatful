@@ -10,13 +10,11 @@ import ClosingHeadline from 'components/Main/ClosingHeadline/ClosingHeadline';
 export default function Home() {
   return (
     <main>
-      <Container>
-        <HeaderBottom />
-        <Headline />
-        <Benefits />
-        <Slider />
-        <Process />
-      </Container>
+      <HeaderBottom />
+      <Headline />
+      <Benefits />
+      <Slider />
+      <Process />
       <ClosingHeadline />
     </main>
   );

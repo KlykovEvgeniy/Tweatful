@@ -7,6 +7,7 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 import { FaArrowRight } from 'react-icons/fa';
 import { FaArrowLeft } from 'react-icons/fa';
 import useWindowSize from 'hooks/useWindowSize';
+import Container from 'components/Container/Container';
 
 export default function Slider() {
   const [total, setTotal] = useState(0);
@@ -56,26 +57,28 @@ export default function Slider() {
 
   return (
     <section className="slider">
-      <div className="text">
-        <h2>Success Story</h2>
-        <p>{arr[total].text}</p>
-        <div className="text-contorls">
-          <img src={logitach} alt="Logitach" />
-          <Link to="/about" className="link">
-            Read Complete Case Study
-            <HiArrowLongRight />
-          </Link>
+      <Container>
+        <div className="text">
+          <h2>Success Story</h2>
+          <p>{arr[total].text}</p>
+          <div className="text-contorls">
+            <img src={logitach} alt="Logitach" />
+            <Link to="/about" className="link">
+              Read Complete Case Study
+              <HiArrowLongRight />
+            </Link>
+          </div>
+          <div className="controls">
+            <button disabled={isDisabledRemove} onClick={removeTotal} type="button">
+              <FaArrowLeft />
+            </button>
+            <button disabled={isDisabled} onClick={addTotal} type="button">
+              <FaArrowRight />
+            </button>
+          </div>
         </div>
-        <div className="controls">
-          <button disabled={isDisabledRemove} onClick={removeTotal} type="button">
-            <FaArrowLeft />
-          </button>
-          <button disabled={isDisabled} onClick={addTotal} type="button">
-            <FaArrowRight />
-          </button>
-        </div>
-      </div>
-      {size.width > 1200 && <img className="slider-img" src={arr[total].src} alt="Pictute" />}
+        {size.width > 1200 && <img className="slider-img" src={arr[total].src} alt="Pictute" />}
+      </Container>
     </section>
   );
 }

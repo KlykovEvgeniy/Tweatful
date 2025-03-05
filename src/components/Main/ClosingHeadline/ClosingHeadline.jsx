@@ -7,12 +7,12 @@ import Logitach from '../../../img/Logitech.svg';
 import Amazon from '../../../img/Amazon.svg';
 import Google from '../../../img/Google.svg';
 
-export default function ClosingHeadline() {
+export default function ClosingHeadline({color}) {
   return (
     <section className="closing-headlines">
       <Container>
-        <h2>The Is Closing Headline To Make A Impact For Call To Action</h2>
-        <p>
+        <h2 style={{color: color}}>The Is Closing Headline To Make A Impact For Call To Action</h2>
+        <p style={{color: color}}>
           Nowadays, it isn’t uncommon to see lenders rapidly adopting a digital lending strategy to streamline the
           lending process nowadays, it isn’t uncommon to see lenders rapidly
         </p>
