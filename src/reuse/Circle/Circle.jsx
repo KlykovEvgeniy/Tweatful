@@ -1,11 +1,11 @@
 import './styles/Circle.css';
 
-export default function Circle({ title, text, img, line, color}) {
+export default function Circle({ title, text, img, line, color, width, secondImage }) {
   return (
     <article className="circle">
-      <div>
-        {img}
-        {line && <span style={{ borderColor: color}}></span>}
+      <div className='circle-line'>
+        <div>{img}</div>
+        {line && <span style={{ borderColor: color }}>{secondImage && <img src={secondImage} />}</span>}
       </div>
       <h3 style={{ color: color }} className="process-title__litle">
         {title}
