@@ -7,9 +7,9 @@ import Logitach from '../../../img/Logitech.svg';
 import Amazon from '../../../img/Amazon.svg';
 import Google from '../../../img/Google.svg';
 
-export default function ClosingHeadline({color}) {
+export default function ClosingHeadline({color, bk = 'transperent', padding}) {
   return (
-    <section className="closing-headlines">
+    <section style={{background: bk, padding: padding}} className="closing-headlines">
       <Container>
         <h2 style={{color: color}}>The Is Closing Headline To Make A Impact For Call To Action</h2>
         <p style={{color: color}}>

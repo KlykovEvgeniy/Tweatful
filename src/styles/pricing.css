@@ -1,0 +1,119 @@
+main .second-header-top .container {
+  padding-top: 200px;
+  padding-bottom: 100px;
+}
+main .second-header-top .container h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -1.16px;
+  text-transform: capitalize;
+  color: #191919;
+  max-width: 923px;
+  margin-bottom: 20px;
+}
+main .second-header-top .container .second-header-descritpion {
+  font-weight: 400;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.43px;
+  color: #191919;
+  max-width: 900px;
+  margin-bottom: 20px;
+}
+main .second-header-top .container .second-header-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+main .second-header-top .container .second-header-container p {
+  margin-left: 20px;
+}
+main .second-header-top .container .second-header-container p:first-child {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  margin-bottom: 10px;
+}
+main .second-header-top .container .second-header-container p:last-child {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.29px;
+}
+main .second-header-top .container .second-header-woman {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+main .second-header-top .container .second-header-woman a {
+  width: 220px;
+  padding: 15px;
+}
+main .second-header-top .container .second-header-woman img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  aspect-ratio: 1/2;
+}
+main .count {
+  margin-bottom: 100px;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #2E4FD7;
+}
+main .count h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.76px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+main .count .count-text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+main .count .count-container {
+  display: flex;
+  justify-content: space-between;
+}
+main .count .count-container article {
+  width: 100%;
+  border-left: 1px solid #FFFFFF;
+}
+main .count .count-container article:first-child {
+  border-left: none;
+}
+@media screen and (max-width: 924px) {
+  main .second-header-top .container {
+    padding-top: 150px;
+  }
+  main .second-header-top .container h1 {
+    font-size: 50px;
+  }
+  main .count {
+    margin-bottom: 30px;
+  }
+  main .count .count-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .count .count-container article {
+    border-left: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  main .count .count-container article:last-child {
+    margin-bottom: 0;
+  }
+}/*# sourceMappingURL=pricing.css.map */

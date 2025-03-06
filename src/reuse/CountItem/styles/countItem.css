@@ -1,0 +1,19 @@
+.count-item {
+  text-align: center;
+}
+.count-item h3 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.94px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.count-item p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.32px;
+  text-align: center;
+  color: #FFFFFF;
+}/*# sourceMappingURL=countItem.css.map */
