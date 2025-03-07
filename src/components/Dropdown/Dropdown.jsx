@@ -15,6 +15,11 @@ export default function Dropdown() {
       const handleFeaturesClick = () => {
         style.backgroundColor = '#052825';
       };
+    
+      const handlePricingClick = () => {
+        style.backgroundColor = 'white';
+      };
+    
 
     const hanldeToggler = () => {
         setIsOpen(prev => !prev);
@@ -39,7 +44,7 @@ export default function Dropdown() {
                         <NavLink onClick={handleFeaturesClick} to="/features">Features</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/pricing">Pricing</NavLink>
+                        <NavLink onClick={handlePricingClick} to="/pricing">Pricing</NavLink>
                     </li>
                     <li>
                         <NavLink to="/about">About Us</NavLink>

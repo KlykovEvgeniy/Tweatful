@@ -13,6 +13,7 @@ export default function AppBar() {
     style.backgroundColor = 'white';
   };
 
+
   return (
     <nav className="nav">
       <ul className="nav-list">

@@ -93,6 +93,157 @@ main .count .count-container article {
 main .count .count-container article:first-child {
   border-left: none;
 }
+main .modern-pricing {
+  margin-bottom: 100px;
+}
+main .modern-pricing .container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+main .modern-pricing .container .pricing-modern-left {
+  position: relative;
+}
+main .modern-pricing .container .pricing-modern-left img {
+  width: 90%;
+}
+main .modern-pricing .container .pricing-modern-left p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  color: #FFFFFF;
+  max-width: 196px;
+}
+main .modern-pricing .container .modern-pricing-right h2 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.94px;
+  color: #191919;
+  max-width: 635px;
+  margin-bottom: 20px;
+}
+main .modern-pricing .container .modern-pricing-right .pricing-modern-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  color: #1E1E1E;
+  max-width: 635px;
+  margin-bottom: 20px;
+}
+main .modern-pricing .container .modern-pricing-right .modern-button {
+  display: flex;
+  align-items: center;
+}
+main .modern-pricing .container .modern-pricing-right .modern-button svg {
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  border: 2px solid #1E1E1E;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+main .modern-about {
+  margin-bottom: 100px;
+}
+main .modern-about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .modern-about .container .modern-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 255px));
+  gap: 30px;
+}
+main .large-slider .container a {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.43px;
+  color: #2E4FD7;
+}
+main .large-slider .container h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.76px;
+  color: #191919;
+  max-width: 730px;
+  margin-top: 20px;
+}
+main .large-slider .container .slides-container {
+  margin-bottom: 100px;
+  position: relative;
+}
+main .large-slider .container .slides-container .controls-large {
+  position: absolute;
+  right: 0;
+  top: -110px;
+}
+main .large-slider .container .slides-container .controls-large button {
+  background-color: #E7EBFC;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  aspect-ratio: 1/2;
+}
+main .large-slider .container .slides-container .controls-large button:first-child {
+  margin-right: 20px;
+}
+main .large-slider .container .slides-container .large-slides-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+main .large-slider .container .slides-container .large-slides-container .slide-1 {
+  width: 350px;
+}
+main .large-slider .container .slides-container .large-slides-container .slide-1 .large-image-faker {
+  background-color: #E7EBFC;
+  max-width: 100%;
+  height: 380px;
+}
+main .large-slider .container .slides-container .large-slides-container .slide-1 h3 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: -0.43px;
+  color: #191919;
+}
+main .large-slider .container .slides-container .large-slides-container .slide-1 p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  color: #1E1E1E;
+}
+main .works {
+  text-align: center;
+  margin-bottom: 100px;
+}
+main .works h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.76px;
+  text-align: center;
+  color: #191919;
+  margin-bottom: 30px;
+}
+main .works .container .works-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 @media screen and (max-width: 924px) {
   main .second-header-top .container {
     padding-top: 150px;
@@ -102,6 +253,10 @@ main .count .count-container article:first-child {
   }
   main .count {
     margin-bottom: 30px;
+  }
+  main .count h2 {
+    font-size: 25px;
+    line-height: 40px;
   }
   main .count .count-container {
     display: flex;
@@ -115,5 +270,56 @@ main .count .count-container article:first-child {
   }
   main .count .count-container article:last-child {
     margin-bottom: 0;
+  }
+  main .modern-pricing {
+    margin-bottom: 30px;
+  }
+  main .modern-pricing .container {
+    display: block;
+  }
+  main .modern-pricing .container .modern-pricing-right h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  main .modern-pricing .container .pricing-modern-left img {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  main .modern-pricing .container .pricing-modern-left p {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  main .modern-about {
+    margin-bottom: 30px;
+  }
+  main .modern-about .container .moderm-about-img {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  main .modern-about .container .modern-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+  main .large-slider {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  main .works {
+    margin-bottom: 30px;
+    text-align: start;
+  }
+  main .works .container h2 {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: start;
+  }
+  main .works .container .works-container {
+    flex-direction: column;
+    align-items: start;
   }
 }/*# sourceMappingURL=pricing.css.map */

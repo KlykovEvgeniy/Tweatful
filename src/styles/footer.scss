@@ -3,7 +3,6 @@
 .footer{
     background-color: $darkgreen;
     width: 100%;
-    margin-top: 100px;
 
     .container{
         padding: 100px 15px 80px;
@@ -105,7 +104,6 @@
 
 @media screen and (max-width: 924px) {
     .footer{
-        margin-top: 50px;
         .container{
             padding: 30px 15px 20px;
             .footer-top{

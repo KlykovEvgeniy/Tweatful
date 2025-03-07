@@ -3,6 +3,10 @@ import Count from 'components/Count/Count';
 import '../../styles/pricing.css';
 import Slider from 'reuse/Slider/Slider';
 import ClosingHeadline from 'components/Main/ClosingHeadline/ClosingHeadline';
+import ModernPricing from 'components/ModernPricing/ModernPricing';
+import ModernAbout from 'components/ModernAbout/ModernAbout';
+import LargeSlider from 'components/LargeSlider/LargeSlider';
+import Works from 'components/Works/Works';
 
 export default function Pricing() {
   return (
@@ -13,8 +17,12 @@ export default function Pricing() {
         color="#E7EBFC"
       />
       <Count />
+      <ModernPricing />
+      <ModernAbout />
+      <LargeSlider />
       <Slider />
-      <ClosingHeadline bk='#E7EBFC' padding='100px 0'/>
+      <Works />
+      <ClosingHeadline bk="#E7EBFC" padding="100px 0" />
     </main>
   );
 }

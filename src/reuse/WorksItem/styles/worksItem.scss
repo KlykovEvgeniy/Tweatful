@@ -1,0 +1,37 @@
+@import '../../../Variebles/Variebles.scss';
+
+.works-item{
+    text-align: center;
+
+    h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.43px;
+        text-align: center;
+        color: $title;
+    }
+
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.29px;
+        text-align: center;
+        color: $paragaphColor;
+    }
+
+    @media screen and (max-width: 924px) {
+        text-align: start;
+        img{
+            width: 30%;
+        }
+        h3{
+            text-align: start;
+            font-size: 20px;
+        }
+        p{
+            text-align: start;
+        }
+    }
+}

@@ -9,12 +9,13 @@ import Container from 'components/Container/Container';
 
 export default function Modern() {
   const text = 'Gorgeous, high-quality design system for mobile, tablet and desktop devices a few reasons';
+
   return (
     <section className="modern">
       <Container>
         <h2 className="modern-title">Headline of Modern and Digital Platform</h2>
         <div className="modern-container">
-          <ModernItem img={star} title="First Feature" text={text} />
+          <ModernItem img={star} title="First Feature" text={text}/>
           <ModernItem img={light} title="Second Feature" text={text} />
           <ModernItem img={mark} title="Third Feature" text={text} />
           <ModernItem img={box} title="Fourth Feature" text={text} />

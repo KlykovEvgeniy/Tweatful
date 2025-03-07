@@ -113,6 +113,183 @@ main{
         }
     }
 
+    .modern-pricing{
+        margin-bottom: 100px;
+        .container{
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+            .pricing-modern-left{
+                position: relative;
+                img{
+                    width: 90%;
+                }
+    
+                p{
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.36px;
+                    color: $white;
+                    max-width: 196px;
+                }
+            }
+    
+            .modern-pricing-right{
+                h2{
+                    font-weight: 700;
+                    font-size: 52px;
+                    line-height: 62px;
+                    letter-spacing: -0.94px;
+                    color: $title;
+                    max-width: 635px;
+                    margin-bottom: 20px;
+                }
+    
+                .pricing-modern-description{
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.36px;
+                    color: $paragaphColor;
+                    max-width: 635px;
+                    margin-bottom: 20px;
+                }
+    
+                .modern-button{
+                    display: flex;
+                    align-items: center;
+                    svg{
+                        width: 40px;
+                        height: 40px;
+                        padding: 12px;
+                        border: 2px solid $paragaphColor;
+                        border-radius: 50%;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .modern-about{
+        margin-bottom: 100px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .modern-container{
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 255px));
+                gap: 30px;
+            }
+        }
+    }
+
+    .large-slider{
+        .container{
+            a{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 34px;
+                letter-spacing: -0.43px;
+                color: $blue;
+            }
+
+            h2{
+                font-weight: 700;
+                font-size: 42px;
+                line-height: 52px;
+                letter-spacing: -0.76px;
+                color: $title;
+                max-width: 730px;
+                margin-top: 20px;
+            }
+
+            .slides-container{
+                margin-bottom: 100px;
+                position: relative;
+                .controls-large{
+                    position: absolute;
+                    right: 0;
+                    top: -110px;
+
+                    button{
+                        background-color: $circleColor;
+                        border: none;
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        aspect-ratio: 1/2;
+
+                        &:first-child{
+                            margin-right: 20px;
+                        }
+                    }
+                }
+
+                .large-slides-container{
+                    
+                    margin-top: 50px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    gap: 20px;
+                    .slide-1{
+                       width: 350px;
+                        .large-image-faker{
+                            background-color: $circleColor;
+                            max-width: 100%;
+                            height: 380px;
+                        }
+
+                        h3{
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 34px;
+                            letter-spacing: -0.43px;
+                            color: $title;
+                        }
+
+                        p{
+                            font-weight: 500;
+                            font-size: 20px;
+                            line-height: 30px;
+                            letter-spacing: -0.36px;
+                            color: $paragaphColor;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+
+    .works{
+        text-align: center;
+        h2{
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 52px;
+            letter-spacing: -0.76px;
+            text-align: center;
+            color: $title;
+            margin-bottom: 30px;
+        }
+        margin-bottom: 100px;
+        .container{
+            .works-container{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
     @media screen and (max-width: 924px) {
         .second-header-top{
             .container{
@@ -124,6 +301,10 @@ main{
         }
         .count{
             margin-bottom: 30px;
+            h2{
+                font-size: 25px;
+                line-height: 40px;
+            }
             .count-container{
                 display: flex;
                 flex-direction: column;
@@ -136,6 +317,66 @@ main{
                     &:last-child{
                         margin-bottom: 0;
                     }
+                }
+            }
+        }
+        .modern-pricing{
+            margin-bottom: 30px;
+            .container{
+                display: block;
+                .modern-pricing-right{
+                    h2{
+                        font-size: 25px;
+                        line-height: 40px;
+                    }
+                }
+                .pricing-modern-left{
+                    img{
+                        display: none;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                    p{
+                        display: none;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+            }
+        }
+        .modern-about{
+            margin-bottom: 30px;
+            .container{
+                .moderm-about-img{
+                    display: none;
+                    opacity: 0;
+                    visibility: hidden;
+                }
+    
+                .modern-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                }
+            }
+        }
+        .large-slider{
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .works{
+            margin-bottom: 30px;
+            text-align: start;
+            .container{
+                h2{
+                    font-size: 25px;
+                    line-height: 40px;
+                    text-align: start;
+                }
+                .works-container{
+                    flex-direction: column;
+                    align-items: start;
                 }
             }
         }
