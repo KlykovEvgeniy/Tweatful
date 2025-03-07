@@ -1,0 +1,45 @@
+@import '../../../Variebles/Variebles.scss';
+
+.solution-card{
+    padding: 50px 20px;
+    background-color: $white;
+
+    img{
+        margin-bottom: 30px;
+        width: 30px;
+        height: 30px;
+    }
+
+    h3{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.43px;
+        color: $paragaphColor;
+        margin-bottom: 10px;
+    }
+    p{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: -0.29px;
+        color: $paragaphColor;
+        max-width: 268px;
+        margin-bottom: 40px;
+    }
+    a{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.25px;
+        color: $blue;
+        svg{
+            fill: $blue;
+            margin-left: 5px;
+            height: 20px;
+            width: 20px;
+        }
+    }
+}

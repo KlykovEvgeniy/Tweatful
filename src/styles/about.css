@@ -1,0 +1,64 @@
+main .solution {
+  background-color: #052825;
+  padding-bottom: 100px;
+  margin-bottom: 100px;
+}
+main .solution .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .solution .container h2 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.94px;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 730px;
+  margin-bottom: 50px;
+}
+main .solution .container .solutions-container {
+  width: 100%;
+  justify-content: space-between;
+  display: grid;
+  gap: 50px 20px;
+  grid-template-columns: repeat(3, minmax(0, 350px));
+}
+@media screen and (max-width: 924px) {
+  main .solution {
+    margin-bottom: 30px;
+  }
+  main .solution .container h2 {
+    font-size: 25px;
+    line-height: 40px;
+    text-align: left;
+  }
+  main .solution .container .solutions-container article {
+    padding: 20px 30px;
+  }
+  main .solution .container .solutions-container article img {
+    margin-bottom: 0;
+  }
+  main .solution .container .solutions-container article h3 {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  main .solution .container .solutions-container article p {
+    font-size: 12px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 660px) {
+  main .solution {
+    align-items: start;
+  }
+  main .solution .container .solutions-container {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+  }
+  main .solution .container .solutions-container article {
+    width: 300px;
+  }
+}/*# sourceMappingURL=about.css.map */

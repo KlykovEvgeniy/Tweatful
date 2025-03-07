@@ -4,7 +4,7 @@ import React from 'react';
 export default function Player() {
   return (
     <div className="player-video">
-      <ReactPlayer url="https://www.youtube.com/watch?v=vPJHjkhTgyk&ab_channel=WhySuda" loop controls />;
+      <ReactPlayer url="https://yandex.ru" loop controls />;
     </div>
   );
 }
