@@ -29,7 +29,7 @@ export default function AppBar() {
           <NavLink onClick={handleHomeClick} to="/about">About Us</NavLink>
         </li>
         <li>
-          <NavLink to="/help">Help</NavLink>
+          <NavLink onClick={handleHomeClick} to="/help">Help</NavLink>
         </li>
       </ul>
     </nav>

@@ -1,0 +1,42 @@
+@import '../../../Variebles/Variebles.scss';
+
+.teammates-card{
+    width: 200px;
+    .teammates-card-image-faker{
+        width: 255px;
+        height: 255px;
+        background-color: $circleColor;
+        margin-bottom: 20px;
+    }
+    .teammates-logos-container{
+        display: flex;
+        gap: 20px;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: $circleColor;
+            border-radius: 50%;
+            aspect-ratio: 1/2;
+        }
+    }
+    h3{
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.43px;
+        color: $title;
+    }
+
+    p{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: -0.36px;
+        color: $paragaphColor;
+        margin-bottom: 5px;
+    }
+
+}

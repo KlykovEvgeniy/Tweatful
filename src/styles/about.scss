@@ -30,6 +30,130 @@ main{
 
     }
 
+    .slider-big{
+        margin-bottom: 100px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            button{
+                background-color: $circleColor;
+                border: none;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                transition: .2s ease;
+
+                svg{
+                    width: 20px;
+                    height: 20px;
+                    fill: $blue;
+                }
+
+                &:disabled svg{
+                    fill:#A1B3F4;
+                }
+            }
+
+            .slider-big-slides{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                
+                .slider-big-image{
+                    width: 50%;
+                    margin: 20px;
+                }
+
+                h2{
+                    font-weight: 400;
+                    font-size: 42px;
+                    line-height: 52px;
+                    letter-spacing: -0.76px;
+                    max-width: 540px;
+                    color: $title;
+                    margin-bottom: 50px;
+                }
+
+                h3{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 34px;
+                    letter-spacing: -0.43px;
+                    color: $paragaphColor;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 26px;
+                    letter-spacing: -0.29px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+
+    .customers{
+        margin-bottom: 100px;
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h2{
+                max-width: 350px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 28px;
+                letter-spacing: -0.32px;
+                color: $process;
+                
+                span{
+                    font-weight: 700;
+                    font-size: 42px;
+                    line-height: 52px;
+                    letter-spacing: -0.76px;
+                }
+            }
+
+            .customres-container{
+                display: grid;
+                grid-template-columns: repeat(4, minmax(0, 160px));
+                gap: 50px;
+
+                img{
+                    width: 120px;
+                }
+            }
+        }
+    }
+    
+    .teammates{
+        margin-bottom: 100px;
+        .container{
+            h2{
+                font-weight: 700;
+                font-size: 52px;
+                line-height: 62px;
+                letter-spacing: -0.94px;
+                color: $title;
+                margin-bottom: 50px;
+            }
+            .teammates-container{
+                display: grid;
+                grid-template-columns: repeat(4, 255px);
+                justify-content: space-between;
+                gap: 50px 0;
+
+                @media screen and (max-width: 1090px) {
+                    grid-template-columns: repeat(2, minmax(0, 255px));
+                    justify-content: start;
+                    gap: 50px 20px;
+                }
+            }
+        }
+    }
+
     @media screen and (max-width: 924px) {
         .solution{
             margin-bottom: 30px;
@@ -56,6 +180,47 @@ main{
                             margin: 0;
                         }
                     }
+                }
+            }
+        }
+        .slider-big{
+            display: none;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .customers{
+            margin-bottom: 30px;
+            .container{
+                h2{
+                    margin-bottom: 30px;
+                }
+                flex-direction:column;
+                align-items: start;
+                .customres-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+
+                    img{
+                        width: 200px;
+                    }
+                }
+            }
+            
+        }
+        .teammates{
+            margin-bottom: 30px;
+            .container{
+                h2{
+                    font-size: 25px;
+                    line-height: 40px;
+                    text-align: left;
+                    margin-bottom: 10px;
+                }
+                .teammates-container{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
                 }
             }
         }

@@ -3,6 +3,9 @@ import '../../styles/about.css';
 import Solution from 'components/Solution/Solution';
 import Benefits from 'components/Main/Benefits/Benefits';
 import ClosingHeadline from 'components/Main/ClosingHeadline/ClosingHeadline';
+import SliderBig from 'components/SliderBig/SliderBig';
+import Customers from 'components/Customers/Customers';
+import Teammates from 'components/Teammates/Teammates';
 
 export default function About() {
   return (
@@ -15,7 +18,10 @@ export default function About() {
       />
       <Solution />
       <Benefits />
-      <ClosingHeadline bk='#E7EBFC' padding='100px 0'/>
+      <SliderBig />
+      <Customers />
+      <Teammates />
+      <ClosingHeadline bk="#E7EBFC" padding="100px 0" />
     </main>
   );
 }
