@@ -1,8 +1,36 @@
 main .contact {
   margin-bottom: 100px;
 }
+main .contact .container {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 100px;
+}
+main .contact .container h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 72px;
+  letter-spacing: -1.16px;
+  text-transform: capitalize;
+  color: #191919;
+  margin-bottom: 20px;
+}
+main .contact .container .contact-description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #767676;
+  max-width: 480px;
+  margin-bottom: 80px;
+}
 main .contact .container .form {
-  margin-top: 200px;
+  position: absolute;
+  right: 15px;
+  top: 30px;
+  background-color: #FFFFFF;
   border: 1px solid #767676;
   max-width: 487px;
   padding: 20px;
@@ -78,7 +106,7 @@ main .contact .container .form form .inputs input {
     align-items: start;
   }
 }
-main .contact .container .form form button {
+main .contact .container .form form .controls-contact {
   height: 40px;
   width: 100%;
   border: none;
@@ -90,8 +118,136 @@ main .contact .container .form form button {
   text-align: center;
   color: #FFFFFF;
 }
-@media screen and (max-width: 924px) {
+main .contact .container .controls-btn-contact {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0.17px;
+  color: #FFFFFF;
+  padding: 20px;
+  text-align: left;
+  max-width: 205px;
+  border: none;
+  transition: 0.2s ease;
+  border: 1px solid #2E4FD7;
+}
+main .contact .container .controls-btn-contact:hover {
+  border: 1px solid #000000;
+  color: #000000;
+}
+main .contact .container .controls-btn-contact:first-child {
+  background-color: #2E4FD7;
+  margin-right: 20px;
+  max-width: 180px;
+}
+main .contact .container .controls-btn-contact:first-child:hover {
+  background-color: transparent;
+}
+main .contact .container .controls-btn-contact:last-child {
+  background-color: #FFFFFF;
+  color: #2E4FD7;
+  max-width: 205px;
+}
+main .contact .container .controls-btn-contact:last-child:hover {
+  background-color: #2E4FD7;
+  color: #000000;
+}
+main .contact .bottom-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  margin-top: 50px;
+}
+main .contact .bottom-container .logo-container {
+  display: flex;
+  align-items: center;
+  max-width: 421px;
+  justify-content: space-between;
+}
+main .contact .bottom-container .logo-container svg {
+  width: 80px;
+  height: 50px;
+  fill: #3B3A40;
+}
+main .contact .contact-top {
+  background-color: #E7EBFC;
+  padding-top: 150px;
+}
+main .office {
+  margin-bottom: 100px;
+}
+main .office .container .office-titles {
+  max-width: 1050px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: space-between;
+}
+main .office .container .office-titles h2 {
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 62px;
+  letter-spacing: -0.94px;
+  color: #191919;
+}
+main .office .container .office-titles p {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.36px;
+  color: #767676;
+  max-width: 420px;
+}
+main .office .container .office-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media screen and (max-width: 1000px) {
   main .contact {
     margin-bottom: 30px;
+  }
+  main .contact .bottom-container {
+    display: none;
+  }
+  main .contact .container {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  main .contact .container .contact-left {
+    display: none;
+  }
+  main .contact .container .form {
+    position: static;
+  }
+  main .contact .container .form .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  main .contact .container .form .inputs input {
+    max-width: 300px;
+  }
+  main .office .container .office-titles h2 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+  main .office .container .office-titles p {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+  main .office .container .office-main {
+    flex-direction: column;
+    align-items: start;
+  }
+  main .office .container .office-main .office-card {
+    margin-bottom: 20px;
+  }
+  main .office .container .office-main .office-card:last-child {
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=help.css.map */

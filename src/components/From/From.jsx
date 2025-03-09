@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Formik, Form, Field } from 'formik';
-import userScheme, { fromScheme } from '../../reuse/Scheme/Scheme.js'
+import { fromScheme } from '../../reuse/Scheme/Scheme.js'
 
 export default function From() {
   const [value, setValue] = useState('');
@@ -29,7 +29,7 @@ export default function From() {
       <Formik validationSchema={fromScheme} onSubmit={handleSubmit} className="form-inner" initialValues={initialValues}>
         <Form>
           <div className="inputs">
-            <label>
+            <label className='name-lable'>
               <div>
                 Your name
                 <span>*</span>
@@ -73,7 +73,7 @@ export default function From() {
               type="text"
             />
           </label>
-          <button type="submit">Contact Us</button>
+          <button className='controls-contact' type="submit">Contact Us</button>
         </Form>
       </Formik>
     </div>

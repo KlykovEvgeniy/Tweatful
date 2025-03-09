@@ -4,12 +4,12 @@ export default function AppBar() {
   const style = document.body.style;
   const handleHomeClick = () => {
     style.backgroundColor = 'white';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   const handleFeaturesClick = () => {
     style.backgroundColor = '#052825';
+    window.scrollTo({ top: 0 });
   };
-
-
 
   return (
     <nav className="nav">
@@ -20,16 +20,24 @@ export default function AppBar() {
           </NavLink>
         </li>
         <li>
-          <NavLink onClick={handleFeaturesClick} to="/features">Features</NavLink>
+          <NavLink onClick={handleFeaturesClick} to="/features">
+            Features
+          </NavLink>
         </li>
         <li>
-          <NavLink onClick={handleHomeClick} to="/pricing">Pricing</NavLink>
+          <NavLink onClick={handleHomeClick} to="/pricing">
+            Pricing
+          </NavLink>
         </li>
         <li>
-          <NavLink onClick={handleHomeClick} to="/about">About Us</NavLink>
+          <NavLink onClick={handleHomeClick} to="/about">
+            About Us
+          </NavLink>
         </li>
         <li>
-          <NavLink onClick={handleHomeClick} to="/help">Help</NavLink>
+          <NavLink onClick={handleHomeClick} to="/help">
+            Help
+          </NavLink>
         </li>
       </ul>
     </nav>

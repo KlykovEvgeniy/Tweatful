@@ -4,8 +4,34 @@ main{
     .contact{
         margin-bottom: 100px;
         .container{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 100px;
+            h1{
+                font-weight: 700;
+                font-size: 64px;
+                line-height: 72px;
+                letter-spacing: -1.16px;
+                text-transform: capitalize;
+                color: $title;
+                margin-bottom: 20px;
+            }
+            .contact-description{
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 32px;
+                letter-spacing: 0.1px;
+                color: $grey;
+                max-width: 480px;            
+                margin-bottom: 80px;
+            }
             .form{
-               margin-top: 200px;
+               position: absolute;
+               right: 15px;
+               top: 30px;
+               background-color: $white;
                border: 1px solid $grey;
                max-width: 487px;
                padding: 20px;
@@ -40,7 +66,6 @@ main{
                     color: $black;
                     display: flex;
                     flex-direction: column;
-
                     span{
                         font-weight: 500;
                         font-size: 16px;
@@ -75,6 +100,7 @@ main{
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
+
                     input{
                         padding: 10px;
                     }
@@ -85,7 +111,7 @@ main{
                     }
                 }
 
-                button{
+                .controls-contact{
                     height: 40px;
                     width: 100%;
                     border: none;
@@ -99,12 +125,160 @@ main{
                 }
                }
             }
+            .controls-btn-contact{
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 100%;
+                letter-spacing: 0.17px;
+                color: $white;                
+                padding: 20px;
+                text-align: left;
+                max-width: 205px;
+                border: none;
+                transition: .2s ease;
+                border: 1px solid $blue;
+
+                &:hover{
+                    border: 1px solid $black;
+                    color: $black;
+                }
+
+                &:first-child{
+                    background-color: $blue;
+                    margin-right: 20px;
+                    max-width: 180px;
+
+                    &:hover{
+                        background-color: transparent;
+                    }
+                }
+
+                &:last-child{
+                    background-color:$white;
+                    color: $blue;
+                    max-width: 205px;
+
+                    &:hover{
+                        background-color: $blue;
+                        color: $black;
+                    }
+                }
+
+
+            }
         } 
+        .bottom-container{
+            max-width: 1200px;
+            margin:0 auto;
+            padding: 15px;
+            margin-top: 50px;
+
+            .logo-container{
+                display: flex;
+                align-items: center;
+                max-width: 421px;
+                justify-content: space-between;
+
+                svg{
+                    width: 80px;
+                    height: 50px;
+                    fill: #3B3A40;
+                }
+            }
+        }
+        .contact-top{
+            background-color: $circleColor;
+            padding-top: 150px;
+        }
     }
 
-    @media screen and (max-width: 924px) {
+    .office{
+        margin-bottom: 100px;
+        .container{
+            .office-titles{
+                max-width: 1050px;
+                display: flex;
+                margin-bottom: 50px;
+                justify-content: space-between;
+                h2{
+                    font-weight: 700;
+                    font-size: 52px;
+                    line-height: 62px;
+                    letter-spacing: -0.94px;
+                    color: $title;
+                }
+                p{
+                    margin-top: 10px;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 30px;
+                    letter-spacing: -0.36px;
+                    color: $grey;
+                    max-width: 420px;
+                }
+            }
+            .office-main{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    @media screen and (max-width: 1000px) {
         .contact{
             margin-bottom: 30px;
+            .bottom-container{
+                display: none;
+            }
+
+         .container{
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: center;
+            .contact-left{
+                display: none;
+            }
+            .form{
+                position: static;
+                .inputs{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: start;
+                    justify-content: start;
+                    input{
+                        max-width: 300px;
+                    }
+                }
+            }
+         }
+        }
+        .office{
+            .container{
+                .office-titles{
+                    h2{
+                        font-size: 25px;
+                        line-height: 40px;
+                    }
+                    p{
+                        display: none;
+                        opacity: 0;
+                        visibility: hidden;
+                    }
+                }
+                .office-main{
+                    flex-direction: column;
+                    align-items: start;
+
+                    .office-card{
+                        margin-bottom: 20px;
+                        &:last-child{
+                            margin-left: 0;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 }

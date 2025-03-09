@@ -6,6 +6,7 @@ export default function BlueButton({ text }) {
   const style = document.body.style
   const handleClick = () => {
     style.backgroundColor = 'white'
+    window.scrollTo({ top: 0 });
   }
   return (
     <Link onClick={handleClick} to='/pricing' className="blue-button">
